@@ -7,7 +7,7 @@ Harvest Moon: Magical Melody was a GameCube game that used sequenced music (it w
 
 ---
 
-The game's music files are found inside the `sound` folder in the game's filesystem. There's a couple of different types, but the most important ones are the `bgm##.mlt`, ranging from bgm01 to bgm43. Each of these files is a single song, containing all the instrument samples, configuration of the instruments, and the music sequence.
+The game's music files are found inside the `sound` folder in the game's filesystem. There's a couple of different types, but the most important ones are the `bgm##.mlt`, ranging from bgm01 to bgm43. Each of these mlt files is a single song, containing all the instrument samples, configuration of the instruments, and the music sequence.
 
 Sequences are literally straight midis, in a hex editor you can open up an mlt file and select the whole area starting with "MThd" (4D 54 68 64) and ending with "ÿ/�" (FF 2F 00), export it to a new file, and slap a .mid to the filename and boom you can play it in any midi player.
 
