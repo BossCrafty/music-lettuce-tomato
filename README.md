@@ -13,6 +13,10 @@ Sequences are literally straight midis, in a hex editor you can open up an mlt f
 
 ---
 # Detailed Findings:
+The MLT files are made up of chunks, following a pattern of first a header and then the contents of the chunk. Here's a diagram to show the structure of these files: <br/>
+![mlt structure diagram](https://github.com/BossCrafty/music-lettuce-tomato/blob/main/images/mlt%20structure%20diagram.png)
+
+
 
 ## Some things to take note of:
 -	All pointers and length counts and other numbers in these files are in Big Endian
@@ -69,7 +73,7 @@ The layout of this data is shown in the image I made, but to summarize:
 - $4A - a single byte seems to always be 0A in raw samples, and 00 for ADPCM samples.
 - $4C - Sample offset pointer (4 bytes), starting from beginning of sample data (immediately after 0x60 byte headers. so if the pointer is zero, the sample starts at $60, if the pointer is B160, then the sample start at B1C0)
 
-(INSERT IMAGE HERE)
+![sample direcory highlights](https://github.com/BossCrafty/music-lettuce-tomato/blob/main/images/samples%20directory%20annotated.png)
 
 Despite being a whole 0x50 bytes, nearly everything that isn't listed here is usually set to zero— Except if the sample is ADPCM. <br/>
 When working with the Wii and GameCube, DSP-ADPCM samples typically include a header containing info necessary for them to be decoded. In Harvest Moon, these samples were stripped of their header and shoved in with the rest of the raw samples... <br/>
