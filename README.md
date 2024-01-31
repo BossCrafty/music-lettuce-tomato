@@ -3,7 +3,7 @@ documentation on the sequenced music format in Harvest Moon: Magical Melody
 
 ---
 
-Harvest Moon: Magical Melody was a GameCube game that used sequenced music. I couldn't find any info on the internet about the format of the sequenced music, so I'm sticking my own research here. In the future I'd like to make as program that automatically rips MIDIs, converts the soundbanks, and produces a WAV file of all the music, but I'm nowhere near that level yet. In the meantime, here's what I've found.
+Harvest Moon: Magical Melody was a GameCube game that used sequenced music (it was later ported to Wii but the filesystem and formats were identical). I couldn't find any info on the internet about the format of the sequenced music, so I'm sticking my own research here. In the future I'd like to make as program that automatically rips MIDIs, converts the soundbanks, and produces a WAV file of all the music, but I'm nowhere near that level yet. In the meantime, here's what I've found.
 
 ---
 
